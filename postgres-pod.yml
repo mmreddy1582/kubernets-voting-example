@@ -9,10 +9,6 @@ metadata:
 spec:
   containers:
     - name: postgres
-      image: postgres:9.4
-      data:
-       POSTGRES_DB: votedbdb
-       POSTGRES_USER: postgresadmin
-       POSTGRES_PASSWORD: admin123
+      image: postgres:10.4
       ports:
         - containerPort: 5432
